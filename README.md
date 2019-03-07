@@ -8,7 +8,7 @@ We will work with the following :
                     any integer different from 0 means true)
 --->Data structures for each program state - Execution Stack (all the statements that will be executed are on this stack)
                                            - Symbol table (containing all the variables from the program state)
-                                           - Heap Table(containing all the addresses of the variables from the program state)
+                                           - Heap Table(containing all the addresses, represented as integers, of the                         variables from the program state)
                                            - File Table (containing all the files that are open)
                                            - Output table (all the output contains only integer numbers)
                                   
@@ -20,5 +20,6 @@ We have mutiple expressions that are subclasses of the super class Exp :
                                      -Constant expression (just an integer number)
                                      -Variable expression
                                      -Boolean expression
+                                     -Arithmetic expression (two expressions and an operator)
                     
                                                            
