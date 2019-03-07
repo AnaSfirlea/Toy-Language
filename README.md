@@ -26,6 +26,6 @@ We have mutiple expressions that are subclasses of the super class Exp :
                                      -Boolean expression
                                      -Arithmetic expression (two expressions and an operator)
  
- With all these classes we imitate the behaviour of an interpretator. The project contains multi-threading as well, we can have multiple program states running at the same time. At the beginning only one program state is introduced and is being forked, creating other program states.
+ With all these classes we imitate the behaviour of an compiler. The project contains multi-threading as well, we can have multiple program states running at the same time. At the beginning only one program state is introduced and is being forked, creating other program states.
                     
                                                            
