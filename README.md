@@ -1,5 +1,5 @@
 # Toy-Language
-An application that imitates the behavior of a compiler.
+An application that imitates the behavior of an interpretator.
 We will work with the following :
 --->Program States - the state of our current program
 --->Statements - the statements that are executed (IStmt interface)
@@ -16,10 +16,16 @@ Firstly we have 3 classes that implement the statement interface:
                     Compound statement (contains two statements)
                     Assignment statement (assigns to a variable a certain integer value)
                     If statement (if expression true then statement1 else statement2)
+                    Fork statement
+                    Print statement
+                    Some statements that work with the heap
+                    Some statements that work with the files
 We have mutiple expressions that are subclasses of the super class Exp : 
                                      -Constant expression (just an integer number)
                                      -Variable expression
                                      -Boolean expression
                                      -Arithmetic expression (two expressions and an operator)
+ 
+ With all these classes we imitate the behaviour of an interpretator. The project contains multi-threading as well, we can have multiple program states running at the same time. At the beginning only one program state is introduced and is being forked, creating other program states.
                     
                                                            
